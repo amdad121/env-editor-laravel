@@ -12,7 +12,7 @@ class EnvEditor
 
         if (file_exists($envFile)) {
             $formattedValue = self::formatValue($value);
-            file_put_contents($envFile, PHP_EOL . "$key=$formattedValue", FILE_APPEND);
+            file_put_contents($envFile, PHP_EOL."$key=$formattedValue", FILE_APPEND);
         }
     }
 
@@ -40,7 +40,7 @@ class EnvEditor
             if (strpos($envContent, "$key=") !== false) {
                 $envContent = preg_replace("/^$key=.*$/m", "$key=$formattedValue", $envContent);
             } else {
-                $envContent .= PHP_EOL . "$key=$formattedValue";
+                $envContent .= PHP_EOL."$key=$formattedValue";
             }
 
             file_put_contents($envFile, $envContent);
@@ -58,7 +58,7 @@ class EnvEditor
             $envContent = preg_replace($pattern, '', $envContent);
             $envContent = preg_replace("/^\s*\n/m", '', $envContent);
 
-            file_put_contents($envFile, trim($envContent) . PHP_EOL);
+            file_put_contents($envFile, trim($envContent).PHP_EOL);
         }
     }
 
@@ -73,7 +73,7 @@ class EnvEditor
 
         // Check if the value contains spaces
         if (strpos($value, ' ') !== false) {
-            $value = '"' . addslashes($value) . '"'; // Wrap and escape quotes if necessary
+            $value = '"'.addslashes($value).'"'; // Wrap and escape quotes if necessary
         }
 
         return $value;

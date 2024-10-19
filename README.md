@@ -1,9 +1,9 @@
 # ENV Editor for laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/amdad121/env-editor-laravel.svg?style=flat-square)](https://packagist.org/packages/amdad121/env-editor-laravel)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/amdadulhaq/env-editor-laravel.svg?style=flat-square)](https://packagist.org/packages/amdadulhaq/env-editor-laravel)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/amdad121/env-editor-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/amdad121/env-editor-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/amdad121/env-editor-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/amdad121/env-editor-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/amdad121/env-editor-laravel.svg?style=flat-square)](https://packagist.org/packages/amdad121/env-editor-laravel)
+[![Total Downloads](https://img.shields.io/packagist/dt/amdadulhaq/env-editor-laravel.svg?style=flat-square)](https://packagist.org/packages/amdadulhaq/env-editor-laravel)
 
 Simple ENV file editor for your Laravel.
 
@@ -12,7 +12,7 @@ Simple ENV file editor for your Laravel.
 You can install the package via composer:
 
 ```bash
-composer require amdad121/env-editor-laravel
+composer require amdadulhaq/env-editor-laravel
 ```
 
 ## Usage

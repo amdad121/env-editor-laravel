@@ -87,9 +87,11 @@ class EnvEditor
             if (in_array(trim($line), ['', '0'], true)) {
                 continue;
             }
+
             if (str_starts_with(trim($line), '#')) {
                 continue;
             }
+
             if (preg_match('/^([^=]+)=(.*)$/', $line, $matches)) {
                 $key = trim($matches[1]);
                 $value = $this->parseValue($matches[2]);

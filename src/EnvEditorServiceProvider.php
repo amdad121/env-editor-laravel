@@ -4,19 +4,14 @@ declare(strict_types=1);
 
 namespace AmdadulHaq\EnvEditor;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class EnvEditorServiceProvider extends PackageServiceProvider
+class EnvEditorServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function register(): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('env-editor-laravel');
+        $this->app->singleton(EnvEditor::class, fn (): EnvEditor => new EnvEditor(
+            $this->app->basePath('.env')
+        ));
     }
 }
